@@ -1,27 +1,194 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Design with Button Acsions</title>
-</head>
-<body>
-    
-</body>
-</html>
-<h1>Responsive Design with Button Acsions</h1>
-<h2>Section 1</h2>
-<p>This is the first section, It has a light blue background, padding, margin, and a box shadow. The layoul adjusts responsively to different sercen sizes,</p>
-<img src="images/section1.jpg" alt="写真">
-<h2>Section 2</h2>
-<p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes，</p>
-<img src="images/section2 (1).jpg" alt="写真">
-<h2>Section 3</h2>
-<p>This is the third section. It has a light purple background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
-<img src="images/section3.jpg" alt="写真">
-<h2>Section 4</h2>
-<p> This is the fourth section, It has a light green background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
-<img src="images/section4.jpg" alt="写真">
 
+!DOCTYPE html> 
 
+<html lang="jp"> 
 
+ <head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Responsive Design with Button Actions</title> 
+
+ 
+
+    <style> 
+
+/* 768px以下の場合 */ 
+
+@media (max-width: 768px) { 
+
+    .container { 
+
+        grid-template-columns: 1fr; /* Single column layout */ 
+
+    } 
+
+    .section { 
+
+        margin-bottom: 10px; /* Add space between sections */ 
+
+    } 
+
+} 
+
+ 
+
+/* 769pxから1024pxの場合 */ 
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    .container { 
+
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
+
+    } 
+
+    .section:nth-child(3), 
+
+    .section:nth-child(4) { 
+
+        margin-top: 10px; /* Add space between rows */ 
+
+    } 
+
+} 
+
+ 
+
+/* 1025pxから1280pxの場合 */ 
+
+@media (min-width: 1025px) and (max-width: 1280px) { 
+
+    .container { 
+
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
+
+        grid-template-areas: 
+
+            "section1 section2 section2" 
+
+            "section3 section3 section4"; 
+
+    } 
+
+.section1 { 
+
+    background-color: #ADD8E6; /* Light blue background */ 
+
+} 
+
+ 
+
+.section2 { 
+
+    background-color: #FFDAB9; /* Light orange background (Peach Puff) */ 
+
+} 
+
+ 
+
+.section3 { 
+
+    background-color: #FFB6C1; /* Light pink background */ 
+
+} 
+
+ 
+
+.section4 { 
+
+    background-color: #90EE90; /* Light green background */ 
+
+} 
+
+    </style> 
+
+ 
+
+       
+
+ </head> 
+
+ 
+
+<body> 
+
+ 
+
+     
+
+    <div class="container"> 
+
+        <div class="section section1">　onclick="handleClick('Section 1')"> 
+
+            <p>This is the first section. It has a light  
+
+                blue background, padding, margin, and a box shadow. The layout adjusts 
+
+                 responsively to different screen sizes.</p> 
+
+            <img src="images/section1.jpg" alt="Section 1 Image"> 
+
+        </div> 
+
+        <div class="section2">　onclick="handleClick('Section 2')"> 
+
+            <p>This is the second section. It has a light orange background,  
+
+                padding, margin, and a box shadow.  
+
+                The layout adjusts responsively to different screen sizes.] 
+
+                <img src="images/section2 (1).jpg"> 
+
+        </div> 
+
+        <div class="section3">　onclick="handleClick('Section 3')"> 
+
+            <p>This is the third section. It has a light purple  
+
+                background, padding, margin, and a box shadow. 
+
+                 The layout adjusts responsively to different screen sizes. 
+
+                <img src="images/section3.jpg"> 
+
+        </div> 
+
+        <div class="section4">　onclick="handleClick('Section 4')">　 
+
+            <p>This is the fourth section, It has a light green background,  
+
+                padding, margin, and a box shadow.  
+
+                The layout adjusts responsively to different screen sizes. 
+
+                <img src="images/section4.jpg"> 
+
+     
+
+                 
+
+        </div> 
+
+    </div> 
+
+ 
+
+     
+
+ 
+
+    
+
+ 
+ 
+ 
+
+</body> 
+
+</html> 
+
+ 
