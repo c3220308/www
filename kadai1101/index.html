@@ -4,78 +4,95 @@
 
 <head> 
 
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8"> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>1Responsive Design Practice</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <style>.section1 { 
+    <title>Responsive Design Practice</title> 
 
-      background: color #f99;/* Light blue background */ 
+    <style>.section1 { 
 
-  } 
+      background-color: #ADD8E6; /* Light blue background */ 
 
-   
+  } 
 
-  .section2 { 
+   
 
-      background: color #f99; /* Light orange background (Peach Puff) */ 
+  .section2 { 
 
-  } 
+      background-color: #FFDAB9; /* Light orange background (Peach Puff) */ 
 
-   
+  } 
 
-  .section3 { 
+   
 
-      background: color #f6f6f6;; /* Light pink background */ 
+  .section3 { 
 
-  } 
+      background-color: #FFB6C1; /* Light pink background */ 
 
- 
-
-     /* 768px以下の場合 */ 
-
-     @media (max-width: 768px) { 
-
-            .container { 
-
-                grid-template-columns: 1fr; /* Single column layout */ 
-
-            } 
-
-        } 
+  } 
 
  
 
-        /* 769pxから1024pxの場合 */ 
+  /* 　画像について　* 
 
-        @media (min-width: 769px) and (max-width: 1024px) { 
+  img { 
 
-            .container { 
+            width: 100%; /* Adjust image width */ 
 
-                grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
+            height:auto; /* Maintain aspect ratio */ 
 
-            } 
+            display:block; 
 
-        } 
+            margin:10px 0; /* Add margin to separate from text */ 
+
+        } 
 
  
 
-        /* 1025px以上の場合 */ 
+     /* 768px以下の場合 */ 
 
-        @media (min-width: 1025px) { 
+     @media (max-width: 768px) { 
 
-            .container { 
+            .container { 
 
-                grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
+                grid-template-columns: 1fr; /* Single column layout */ 
 
-            } 
+            } 
 
-        } 
+        } 
 
-     
+ 
 
-  </style> 
+        /* 769pxから1024pxの場合 */ 
+
+        @media (min-width: 769px) and (max-width: 1024px) { 
+
+            .container { 
+
+                grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
+
+            } 
+
+        } 
+
+ 
+
+        /* 1025px以上の場合 */ 
+
+        @media (min-width: 1025px) { 
+
+            .container { 
+
+                grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
+
+            } 
+
+        } 
+
+     
+
+  </style> 
 
  
 
@@ -83,69 +100,61 @@
 
 <body> 
 
-   
+   
 
-    <h1>Responsive Design Practice<h1> 
+    <h1>Responsive Design Practice<h1> 
 
-  <div class="container"> 
+  <div class="container"> 
 
-    <div class="section section1">　> 
+    <div class="section section1">　> 
 
-      <h2>Section 1 </h2> 
+      <h2>Section 1 </h2> 
 
-      <p>This is the first section. It has a light  
+      <p>This is the first section. It has a light blue background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p> 
 
-        blue background, padding, margin, and a box shadow.  
+    </section> 
 
-        The layout adjusts responsively to different screen sizes.</section> 
+        <img src="image/section1.jpg" alt="Section 1 Image"> 
 
-        <img src="image/section1.jpg" alt="Section 1 Image"> 
-
-    </div> 
+    </div> 
 
  
 
-    <div class="section section2">　 
+    <div class="section section2">　 
 
-      <h2>Section 2 </h2> 
+      <h2>Section 2 </h2> 
 
-      <p>This is the second section. It has a ligh 
+      <p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p> 
 
-        t orange background, padding, margin, and a box shadow. The  
+    </section> 
 
-        layout adjusts responsively to different screen sizes..</section> 
+        <img src="image/section2.jpg" alt="Section 2 Image"> 
 
-        <img src="image/section2.jpg" alt="Section 2 Image"> 
-
-    </div> 
+    </div> 
 
  
 
-    <div class="section section3">　 
+    <div class="section section3">　 
 
-      <h2>Section 3 </h2> 
+      <h2>Section 3 </h2> 
 
-      <p>This is the third section. It has a light purple background,  
+      < <p>This is the third section. It has a light pink background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p> 
 
-        padding, margin, and a box shadow. The layout adjusts 
+         </section> 
 
-         responsively to different screen sizes. 
+        <img src="image/section3.jpg" alt="Section 3 Image"> 
 
-         </section> 
+    </div> 
 
-        <img src="image/section3.jpg" alt="Section 3 Image"> 
+    
 
-    </div> 
-
-    
-
-     
+     
 
  
 
-  
+  
 
-         
+         
 
 </body> 
 
