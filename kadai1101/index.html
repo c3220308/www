@@ -1,37 +1,153 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    maru{
-width: 12px;
-height: 12px;
--webkit-border-radius: 50%;
-border-radius: 50%;
-background: #7a0;
-}
-    maru{
-left: 3px;
-width: 3px;
-height: 3px;
-border-top: 1px solid #fff;
-border-right: 1px solid #fff;
--webkit-transform: rotate(45deg);
-transform: rotate(45deg);
+<!DOCTYPE html> 
 
-    </style>
+<html lang="jp"> 
 
-</head>
+<head> 
 
-<body>
-   <div class= "maru"></div>
-    <h1 class="q1">丸い矢印付きの見出し1</h1>
-</body>
-</html>
+    <meta charset="UTF-8"> 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+    <title>Responsive Design Practice</title> 
 
+    <style>.section1 { 
 
-    
+      background-color: #ADD8E6; /* Light blue background */ 
+
+  } 
+
+   
+
+  .section2 { 
+
+      background-color: #FFDAB9; /* Light orange background (Peach Puff) */ 
+
+  } 
+
+   
+
+  .section3 { 
+
+      background-color: #FFB6C1; /* Light pink background */ 
+
+  } 
+
+ 
+
+     /* 768px以下の場合 */ 
+
+     @media (max-width: 768px) { 
+
+            .container { 
+
+                grid-template-columns: 1fr; /* Single column layout */ 
+
+            } 
+
+        } 
+
+ 
+
+        /* 769pxから1024pxの場合 */ 
+
+        @media (min-width: 769px) and (max-width: 1024px) { 
+
+            .container { 
+
+                grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
+
+            } 
+
+        } 
+
+ 
+
+        /* 1025px以上の場合 */ 
+
+        @media (min-width: 1025px) { 
+
+            .container { 
+
+                grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
+
+            } 
+
+        } 
+
+     
+
+  </style> 
+
+ 
+
+</head> 
+
+<body> 
+
+   
+
+    <h1>Responsive Design Practice<h1> 
+
+  <div class="container"> 
+
+    <div class="section section1">　> 
+
+      <h2>Section 1 </h2> 
+
+      <p>This is the first section. It has a light  
+
+        blue background, padding, margin, and a box shadow.  
+
+        The layout adjusts responsively to different screen sizes.</section> 
+
+        <img src="image/section1.jpg" alt="Section 1 Image"> 
+
+    </div> 
+
+ 
+
+    <div class="section section2">　 
+
+      <h2>Section 2 </h2> 
+
+      <p>This is the second section. It has a ligh 
+
+        t orange background, padding, margin, and a box shadow. The  
+
+        layout adjusts responsively to different screen sizes..</section> 
+
+        <img src="image/section2.jpg" alt="Section 2 Image"> 
+
+    </div> 
+
+ 
+
+    <div class="section section3">　 
+
+      <h2>Section 3 </h2> 
+
+      <p>This is the third section. It has a light purple background,  
+
+        padding, margin, and a box shadow. The layout adjusts 
+
+         responsively to different screen sizes. 
+
+         </section> 
+
+        <img src="image/section3.jpg" alt="Section 3 Image"> 
+
+    </div> 
+
+    
+
+     
+
+ 
+
+  
+
+         
+
+</body> 
+
+</html> 
