@@ -1,35 +1,84 @@
-
-!DOCTYPE html> 
+<!DOCTYPE html> 
 
 <html lang="jp"> 
 
- <head> 
+ <head> 
 
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8"> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>Responsive Design with Button Actions</title> 
+    <title>Responsive Design with Button Actions</title> 
 
  
 
-    <style> 
+ 
+
+    <style> 
+
+ 
+
+.section1 { 
+
+            background-color: #ADD8E6; /* Light blue background */ 
+
+        } 
+
+.section2 { 
+
+            background-color: #FFDAB9; /* Light orange background (Peach Puff) */ 
+
+        } 
+
+ .section3 { 
+
+            background-color: #FFB6C1; /* Light pink background */ 
+
+        } 
+
+ 
+
+ .section4 { 
+
+            background-color: #90EE90; /* Light green background */ 
+
+        } 
+
+ 
+
+ 
+
+ 
+
+img { 
+
+            width: 100%; /* Adjust image width */ 
+
+            height: auto; /* Maintain aspect ratio */ 
+
+            margin: 10px 0; /* Add margin to separate from text */ 
+
+        } 
+
+ 
+
+ 
 
 /* 768px以下の場合 */ 
 
 @media (max-width: 768px) { 
 
-    .container { 
+    .container { 
 
-        grid-template-columns: 1fr; /* Single column layout */ 
+        grid-template-columns: 1fr; /* Single column layout */ 
 
-    } 
+    } 
 
-    .section { 
+    .section { 
 
-        margin-bottom: 10px; /* Add space between sections */ 
+        margin-bottom: 10px; /* Add space between sections */ 
 
-    } 
+    } 
 
 } 
 
@@ -39,19 +88,19 @@
 
 @media (min-width: 769px) and (max-width: 1024px) { 
 
-    .container { 
+    .container { 
 
-        grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */ 
 
-    } 
+    } 
 
-    .section:nth-child(3), 
+    .section:nth-child(3), 
 
-    .section:nth-child(4) { 
+    .section:nth-child(4) { 
 
-        margin-top: 10px; /* Add space between rows */ 
+        margin-top: 10px; /* Add space between rows */ 
 
-    } 
+    } 
 
 } 
 
@@ -61,21 +110,21 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) { 
 
-    .container { 
+    .container { 
 
-        grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */ 
 
-        grid-template-areas: 
+        grid-template-areas: 
 
-            "section1 section2 section2" 
+            "section1 section2 section2" 
 
-            "section3 section3 section4"; 
+            "section3 section3 section4"; 
 
-    } 
+    } 
 
 .section1 { 
 
-    background-color: #ADD8E6; /* Light blue background */ 
+    background-color: #ADD8E6; /* Light blue background */ 
 
 } 
 
@@ -83,7 +132,7 @@
 
 .section2 { 
 
-    background-color: #ff9999; /* Light orange background (Peach Puff) */ 
+    background-color: #FFDAB9; /* Light orange background (Peach Puff) */ 
 
 } 
 
@@ -91,7 +140,7 @@
 
 .section3 { 
 
-    background-color: #cc6699; /* Light pink background */ 
+    background-color: #FFB6C1; /* Light pink background */ 
 
 } 
 
@@ -99,118 +148,100 @@
 
 .section4 { 
 
-    background-color: #99cc33; /* Light green background */ 
+    background-color: #90EE90; /* Light green background */ 
 
 } 
 
-img{
-
-
-
-width: 100%; /* Adjust image width */ 
-
-height:auto; /* Maintain aspect ratio */ 
-
-display:block; 
-
-margin:10px 0; /* Add margin to separate from text */ 
-}
-
-
-    </style> 
+    </style> 
 
  
 
-       
+       
 
- </head> 
+ </head> 
 
  
-
-
-
-
-
-
-
-
 
 <body> 
 
  
 
-     <h1>Responsive Design with Button Actions</h1>
+<h1>Responsive Design with Button Actions</h1> 
 
-    <div class="container"> 
+     
 
-        <div class="section section1">　onclick="handleClick('Section 1')"> 
+    <div class="container"> 
 
-            <p>This is the first section. It has a light  
+        <div class="section section1">　onclick="handleClick('Section 1')"> 
 
-                blue background, padding, margin, and a box shadow. The layout adjusts 
+            <p>This is the first section. It has a light  
 
-                 responsively to different screen sizes.</p> 
+                blue background, padding, margin, and a box shadow. The layout adjusts 
 
-            <img src="images/section1.jpg" alt="Section 1 Image"> 
+                 responsively to different screen sizes.</p> 
 
-        </div> 
+            <img src="image/section1.jpg" alt="Section 1 Image"> 
 
-        <div class="section2">　onclick="handleClick('Section 2')"> 
+        </div> 
 
-            <p>This is the second section. It has a light orange background,  
+        <div class="section2">　onclick="handleClick('Section 2')"> 
 
-                padding, margin, and a box shadow.  
+            <p>This is the second section. It has a light orange background,  
 
-                The layout adjusts responsively to different screen sizes.] 
+                padding, margin, and a box shadow.  
 
-                <img src="images/section2 (1).jpg"> 
+                The layout adjusts responsively to different screen sizes.] 
 
-        </div> 
+                <img src="image/section2.jpg"> 
 
-        <div class="section3">　onclick="handleClick('Section 3')"> 
+        </div> 
 
-            <p>This is the third section. It has a light purple  
+        <div class="section3">　onclick="handleClick('Section 3')"> 
 
-                background, padding, margin, and a box shadow. 
+            <p>This is the third section. It has a light purple  
 
-                 The layout adjusts responsively to different screen sizes. 
+                background, padding, margin, and a box shadow. 
 
-                <img src="images/section3.jpg"> 
+                 The layout adjusts responsively to different screen sizes. 
 
-        </div> 
+                <img src="image/section3.jpg"> 
 
-        <div class="section4">　onclick="handleClick('Section 4')">　 
+        </div> 
 
-            <p>This is the fourth section, It has a light green background,  
+        <div class="section4">　onclick="handleClick('Section 4')">　 
 
-                padding, margin, and a box shadow.  
+            <p>This is the fourth section, It has a light green background,  
 
-                The layout adjusts responsively to different screen sizes. 
+                padding, margin, and a box shadow.  
 
-                <img src="images/section4.jpg"> 
+                The layout adjusts responsively to different screen sizes. 
 
-     
+                <img src="image/section4.jpg"> 
 
-                 
+     
 
-        </div> 
+                 
 
-    </div> 
+        </div> 
 
- 
-
-     
+    </div> 
 
  
 
-    
+     
 
  
+
+    
+
  
+
+ 
+
+ 
+
  
 
 </body> 
 
 </html> 
-
- 
