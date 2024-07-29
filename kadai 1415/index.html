@@ -1,201 +1,201 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情報経営学科</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #FFD700; /* 金色 */
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-        section {
-            padding: 2em;
-            margin: 1em;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .background-gold {
-            background-color: #FFD700;
-        }
-        .background-black {
-            background-color: #000;
-            color: white;
-        }
-        .background-lightpink {
-            background-color: #fce4ec;
-        }
-        .background-lightgreen {
-            background-color: #e8f5e9;
-        }
-        .background-lightred {
-            background-color: #ffebee;
-        }
-        .pyramid {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-        }
-        .pyramid .box {
-            flex: 1;
-            margin: 1em;
-            border: 3px solid #d1c4e9;
-            padding: 1em;
-            border-radius: 8px;
-            background: linear-gradient(145deg, #fce4ec, #f8bbd0);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .club {
-            border: 3px solid #000;
-            padding: 1em;
-            margin: 1em;
-            border-radius: 8px;
-            background: linear-gradient(145deg, #ffe0b2, #ffcc80);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .comment {
-            border: 3px solid #d1c4e9;
-            padding: 1em;
-            margin: 1em;
-            border-radius: 8px;
-            background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .comment p {
-            margin: 0.5em 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #f4f4f4;
-        }
-        nav {
-            text-align: center;
-            padding: 1em;
-            background-color: #f4f4f4;
-        }
-        nav a {
-            display: block;
-            margin: 0.5em 0;
-            color: #333;
-            text-decoration: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報経営学科</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #FFD700; /* 金色 */
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .background-gold {
+            background-color: #FFD700;
+        }
+        .background-black {
+            background-color: #000;
+            color: white;
+        }
+        .background-lightpink {
+            background-color: #fce4ec;
+        }
+        .background-lightgreen {
+            background-color: #e8f5e9;
+        }
+        .background-lightred {
+            background-color: #ffebee;
+        }
+        .pyramid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .pyramid .box {
+            flex: 1;
+            margin: 1em;
+            border: 3px solid #d1c4e9;
+            padding: 1em;
+            border-radius: 8px;
+            background: linear-gradient(145deg, #fce4ec, #f8bbd0);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .club {
+            border: 3px solid #000;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 8px;
+            background: linear-gradient(145deg, #ffe0b2, #ffcc80);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .comment {
+            border: 3px solid #d1c4e9;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 8px;
+            background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .comment p {
+            margin: 0.5em 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+        nav {
+            text-align: center;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+        nav a {
+            display: block;
+            margin: 0.5em 0;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <ruby>情報<rt>じょうほう</rt>経営<rt>けいえい</rt>学科<rt>がっか</rt></ruby>
-        </h1>
-    </header>
- 
-    <!-- セクション1 -->
-    <section id="section1" class="background-gold">
-        <h1>
-            本大学の1つの学科 <em style="color: red;">経営情報学科</em>
-        </h1>
-        <h2 class="background-black">IT技術者や経営に携わる仕事や会計に携わる仕事に役立つ！</h2>
-        <img src="computer.jpg" alt="パソコンの画像">
-        <!-- 各セクションへのリンク -->
-        <nav>
-            <p>クリックで該当ページへ飛びます:</p>
-            <a href="#section2">学べる科目と講義</a>
-            <a href="#section5">サークル・部活</a>
-            <a href="#section6">生徒・教授・卒業生のコメント</a>
-            <a href="#section7">学費と学割</a>
-            <a href="#section8">オープンキャンパスと資料請求</a>
-        </nav>
-    </section>
- 
-    <!-- セクション2 -->
-    <section id="section2" class="background-lightpink">
-        <h1>本学科で学べる科目と講義</h1>
-        <div class="pyramid">
-            <div class="box">
-                <h3>コンピューター</h3>
-                <ol>
-                    <li>プログラミングの講義によって、ITパスポートに使える授業である二進数やジャバスクリプトについて学ぶ。</li>
-                    <li>プライベートでも役立つようなwebを作る講義でタイトルの書き方や色のつけ方を学んだり、動画編集の講義で、映像にアニメーションを付ける方法を学べる。</li>
-                </ol>
-            </div>
-            <div class="box">
-                <h3>経営</h3>
-                <ul>
-                    <li>経営学を学んで会社の成り立ちは株式会社など、その具体的内容に迫る。</li>
-                    <li>経営組織論として組織においてやる気をださせる重要性や、リーダーは一人だけでは命令まで時間がかかるため棄権と学べる。</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>簿記</h3>
-                <ol>
-                    <li>簿記入門として、簿記の仕分けのしかたという、会社の利益と出費などを知るものを学べる。</li>
-                    <li>公認会計士の先生から、公認会計士の話もうかがえるかもしれない。</li>
-                </ol>
-            </div>
-        </div>
-    </section>
- 
-    <!-- セクション5 -->
-    <section id="section5" class="club">
-        <h1>サークル、部活</h1>
-        <h2>部活</h2>
-        <ul>
-            <li>バレーボール</li>
-            <li>サッカー</li>
-        </ul>
-        <h2>サークル</h2>
-        <ul>
-            <li>ダンス部</li>
-            <li>バスケ部</li>
-            <li>ソフトピア研究室 (ITにかかわれるサークル)</li>
-        </ul>
-    </section>
- 
-    <!-- セクション6 -->
-    <section id="section6" class="background-lightgreen comment">
-        <h1>コメント 生徒 教授 卒業生</h1>
-        <div>
-            <h3>生徒のコメント</h3>
-            <p>コンピューターに強くなれたため、招待の夢がみつけやすくなった。IT業界に興味を持てた。</p>
-        </div>
-        <div>
-            <h3>教授のコメント</h3>
-            <p>今後のITという社会に備えた準備ができる。</p>
-        </div>
-        <div>
-            <h3>卒業生のコメント</h3>
-            <p>どんな会社でもある程度のPCのスキルは必要なので、有意義な学校生活だった。</p>
-        </div>
-    </section>
- 
-    <!-- セクション7 -->
-    <section id="section7" class="background-lightred">
-        <h1>学費 学割</h1>
-        <h2>学費について</h2>
-        <p>半年に51万円となり、本学はPCの設備が整っているためお得に感じられるかもしれない。</p>
-        <h2>学割について</h2>
-        <ul>
-            <li>学割もあり、半額や全額の学費を免除といった入試試験の結果に応じて配られる制度もある。</li>
-        </ul>
-    </section>
- 
-    <!-- セクション8 -->
-    <section id="section8">
-        <button onclick="window.location.href='open-campus.html'">オープンキャンパス</button>
-        <button onclick="window.location.href='request-materials.html'">資料請求</button>
-    </section>
- 
-    <footer>
-        <p>© 2024 情報経営学
+    <header>
+        <h1>
+            <ruby>情報<rt>じょうほう</rt>経営<rt>けいえい</rt>学科<rt>がっか</rt></ruby>
+        </h1>
+    </header>
+
+    <!-- セクション1 -->
+    <section id="section1" class="background-gold">
+        <h1>
+            本大学の1つの学科 <em style="color: red;">経営情報学科</em>
+        </h1>
+        <h2 class="background-black">IT技術者や経営に携わる仕事や会計に携わる仕事に役立つ！</h2>
+        <img src="computer.jpg" alt="パソコンの画像">
+        <!-- 各セクションへのリンク -->
+        <nav>
+            <p>クリックで該当ページへ飛びます:</p>
+            <a href="#section2">学べる科目と講義</a>
+            <a href="#section5">サークル・部活</a>
+            <a href="#section6">生徒・教授・卒業生のコメント</a>
+            <a href="#section7">学費と学割</a>
+            <a href="#section8">オープンキャンパスと資料請求</a>
+        </nav>
+    </section>
+
+    <!-- セクション2 -->
+    <section id="section2" class="background-lightpink">
+        <h1>本学科で学べる科目と講義</h1>
+        <div class="pyramid">
+            <div class="box">
+                <h3>コンピューター</h3>
+                <ol>
+                    <li>プログラミングの講義によって、ITパスポートに使える授業である二進数やジャバスクリプトについて学ぶ。</li>
+                    <li>プライベートでも役立つようなwebを作る講義でタイトルの書き方や色のつけ方を学んだり、動画編集の講義で、映像にアニメーションを付ける方法を学べる。</li>
+                </ol>
+            </div>
+            <div class="box">
+                <h3>経営</h3>
+                <ul>
+                    <li>経営学を学んで会社の成り立ちは株式会社など、その具体的内容に迫る。</li>
+                    <li>経営組織論として組織においてやる気をださせる重要性や、リーダーは一人だけでは命令まで時間がかかるため棄権と学べる。</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>簿記</h3>
+                <ol>
+                    <li>簿記入門として、簿記の仕分けのしかたという、会社の利益と出費などを知るものを学べる。</li>
+                    <li>公認会計士の先生から、公認会計士の話もうかがえるかもしれない。</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション5 -->
+    <section id="section5" class="club">
+        <h1>サークル、部活</h1>
+        <h2>部活</h2>
+        <ul>
+            <li>バレーボール</li>
+            <li>サッカー</li>
+        </ul>
+        <h2>サークル</h2>
+        <ul>
+            <li>ダンス部</li>
+            <li>バスケ部</li>
+            <li>ソフトピア研究室 (ITにかかわれるサークル)</li>
+        </ul>
+    </section>
+
+    <!-- セクション6 -->
+    <section id="section6" class="background-lightgreen comment">
+        <h1>コメント 生徒 教授 卒業生</h1>
+        <div>
+            <h3>生徒のコメント</h3>
+            <p>コンピューターに強くなれたため、招待の夢がみつけやすくなった。IT業界に興味を持てた。</p>
+        </div>
+        <div>
+            <h3>教授のコメント</h3>
+            <p>今後のITという社会に備えた準備ができる。</p>
+        </div>
+        <div>
+            <h3>卒業生のコメント</h3>
+            <p>どんな会社でもある程度のPCのスキルは必要なので、有意義な学校生活だった。</p>
+        </div>
+    </section>
+
+    <!-- セクション7 -->
+    <section id="section7" class="background-lightred">
+        <h1>学費 学割</h1>
+        <h2>学費について</h2>
+        <p>半年に51万円となり、本学はPCの設備が整っているためお得に感じられるかもしれない。</p>
+        <h2>学割について</h2>
+        <ul>
+            <li>学割もあり、半額や全額の学費を免除といった入試試験の結果に応じて配られる制度もある。</li>
+        </ul>
+    </section>
+
+    <!-- セクション8 -->
+    <section id="section8">
+        <button onclick="window.location.href='open-campus.html'">オープンキャンパス</button>
+        <button onclick="window.location.href='request-materials.html'">資料請求</button>
+    </section>
+
+    <footer>
+        <p>© 2024 情報経営学
